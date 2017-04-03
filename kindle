@@ -1,0 +1,25 @@
+#!/usr/bin/env bash
+
+echo 'Going in the kindle directory'
+cd ~/kindle/kindle2
+
+
+# sh ./adb+  ./adb+ install *.apk
+#
+echo 'installing Apps to the Amazon Kindle'
+
+sh ./adb+  install cn.wps.moffice_eng-10.0.5-www.APK4Fun.com.apk
+sh ./adb+  install com.metago.astro-4.6.3.4-play-www.APK4Fun.com.apk
+sh ./adb+  install com.opera.mini.native_v21.0.2254.111920-211111920_Android-4.1.apk
+sh ./adb+  install com.speedAnatomy.speedAnatomyLite_1b14f_2013-12-29.apk
+sh ./adb+  install es-file-explorer-4-1-6.apk
+sh ./adb+  install Medscape.apk
+sh ./adb+ install Mini-Nurse_Lite_v2.5_apkpure.com.apk
+sh ./adb+  install Moodle_Mobile_v3.2.0_apkpure.com.apk
+sh ./adb+ install NCLEX_RN_Mastery_v4.50.1776_apkpure.com.apk
+sh ./adb+  install Nurse_Up_Pro_3.0.0.apk
+sh ./adb+  install Nursing-Care_Plans-FREE_3.1.apk
+sh ./adb+  install OB_Wheel_Pregnancy-calculator_v9.1016-07-03_apkpure.com.apk
+sh ./adb+  install Omnio_v3.22.00_apkpure.com.apk
+sh ./adb+  install Quick-LabRef.apk
+sh ./adb+  install Visual_Anatomy_Free_5.0.apk
