@@ -1,0 +1,5 @@
+#creating aliases for few daily commands
+
+like :
+alias s='git status -s'
+
