@@ -4,9 +4,13 @@
 #If possibel it should also take an argument of a commit message
 
 echo "This is your current working files"
+
+
 git status
 
-read -p " Do you want to add  changes (y/n) :" RESP
+sleep 10
+
+read -p " Do you want to add all changes (y/n) :" RESP
 
 if [ "$RESP" = "y" ]; then
   echo "Changes added"
@@ -14,26 +18,31 @@ if [ "$RESP" = "y" ]; then
   
   git add .
 else
+  echo "Exiting ..."
+  sleep 10
   exit;
 fi
 
 
 
-
-
 # read -p 'Enter your commit message' COMMIT
+
 COMMIT=$1
 
 echo "Commit your changes please"
 git commit -m $COMMIT
 
+sleep 10 
 
 read -p " Do you want to push the changes (y/n) :" RESPONSE
 
 if [ "$RESPONSE" = "y" ]; then
   echo "Pushing your changes to github"
-  echo "Kindly Enter your password "
+  echo "Enter your github credentials "
   git push
 else
   echo "Sorry use me later"
+  echo "exiting ..."
+  sleep 6
+  exit;
 fi
