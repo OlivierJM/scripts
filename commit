@@ -1,0 +1,39 @@
+#!/bin/bash 
+
+#This script will be doing all basic daily git commit
+#If possibel it should also take an argument of a commit message
+
+echo "This is your current working files"
+git status
+
+read -p " Do you want to add  changes (y/n) :" RESP
+
+if [ "$RESP" = "y" ]; then
+  echo "Changes added"
+  echo "Updated the git HEAD"
+  
+  git add .
+else
+  exit;
+fi
+
+
+
+
+
+# read -p 'Enter your commit message' COMMIT
+COMMIT=$1
+
+echo "Commit your changes please"
+git commit -m $COMMIT
+
+
+read -p " Do you want to push the changes (y/n) :" RESPONSE
+
+if [ "$RESPONSE" = "y" ]; then
+  echo "Pushing your changes to github"
+  echo "Kindly Enter your password "
+  git push
+else
+  echo "Sorry use me later"
+fi
