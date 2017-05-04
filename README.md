@@ -10,3 +10,4 @@ it does it in a synchronious way
 # commit 
 The commit script does the basic git commands(add, commit and push) it takes in an argument of your commit message
 Please don't forget to give it a commit message
+Export the path to the commit script and add an alias in .bashrc (like) and run it with just typing 'c' from anywhere

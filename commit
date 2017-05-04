@@ -9,7 +9,7 @@ echo "This is your current working files"
 
 git status -s
 
-sleep 5
+sleep 3
 
 read -p " Do you want to add all changes (y/n) :" RESP
 
@@ -20,7 +20,7 @@ if [ "$RESP" = "y" ]; then
   git add .
 else
   echo "Exiting ..."
-  sleep 10
+  sleep 4
   exit;
 fi
 
@@ -31,17 +31,18 @@ COMMIT=$1
 echo "Commit your changes please"
 git commit -m $COMMIT
 
-sleep 5 
+sleep 3 
 
 read -p " Do you want to push the changes (y/n) :" RESPONSE
 
 if [ "$RESPONSE" = "y" ]; then
   echo "Pushing your changes to github"
+  sleep 2
   echo "Enter your github credentials "
   git push
 else
-  echo "Sorry but you can use me later"
+  echo "Thank you"
   echo "exiting ..."
-  sleep 6
+  sleep 4
   exit;
 fi

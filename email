@@ -1,0 +1,1 @@
+while :; do sleep 1s; echo "hello Olivier, You need to continue with the udacity course today " | mailx -s "udacity" manolivier93@gmail.com; done
