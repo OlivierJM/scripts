@@ -34,4 +34,3 @@ sleep 2
 fi
 
 echo "Done Synchronizing"
-# mongorestore --host 13.232.61.192 --port 37017 --username olivier --password "manoli" /opt/backup/mongodump-2011-10-24
